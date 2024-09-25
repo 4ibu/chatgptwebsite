@@ -116,6 +116,12 @@ const reviews = [
     username: "@sumi8a",
     body: "now i dont get heart attacks by rush, 10/10",
     img: "/pfps/sumi8a.png",
+  },
+  {
+    name: "RegularVynixu",
+    username: "@.vynixu",
+    body: "mspaint is really good, I just want my name on the site 5/5 ⭐",
+    img: "/pfps/vynixu.png",
   }
 ];
 
@@ -160,12 +166,12 @@ const ReviewCard = ({
 export default function ReviewMarquee() {
   return (
     <div className="relative py-10 flex w-screen flex-col items-center justify-center overflow-hidden bg-background md:shadow-xl text-left">
-      <Marquee className="[--duration:30s]">
+      <Marquee className="[--duration:60s]">
         {firstRow.map((review) => (
           <ReviewCard key={review.username} {...review} />
         ))}
       </Marquee>
-      <Marquee reverse className="[--duration:30s]">
+      <Marquee reverse className="[--duration:60s]">
         {secondRow.map((review) => (
           <ReviewCard key={review.username} {...review} />
         ))}
